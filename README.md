@@ -8,6 +8,7 @@ Example
 
 Given a file system like this:
 
+<pre>
 views/
   layout.us
   home/
@@ -15,6 +16,7 @@ views/
     blah.us
   admin/
     dashboard.us
+</pre>
 
 The following command:
 
