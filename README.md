@@ -20,7 +20,9 @@ views/
 
 The following command:
 
-  underscorec views/ output.js
+```
+underscorec views/ output.js
+```
 
 will compile the four underscore templates into the file output.js. The views are attached to a global templates object and named according to their path:
 
