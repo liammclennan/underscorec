@@ -1,13 +1,14 @@
 underscorec
 ===========
 
-Copy the handlebars exe behaviour for underscore.js templates. 
+Command line precompilation for underscore.js templates.
 
 Example
 ------
 
 Given a file system like this:
 
+<pre>
 views/
   layout.us
   home/
@@ -15,10 +16,13 @@ views/
     blah.us
   admin/
     dashboard.us
+</pre>
 
 The following command:
 
-  underscorec views/ output.js
+```
+underscorec views/ output.js
+```
 
 will compile the four underscore templates into the file output.js. The views are attached to a global templates object and named according to their path:
 
