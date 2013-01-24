@@ -1,7 +1,7 @@
 underscorec
 ===========
 
-Copy the handlebars exe behaviour for underscore.js templates. 
+Command line precompilation for underscore.js templates.
 
 Example
 ------
