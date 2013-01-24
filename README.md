@@ -1,0 +1,28 @@
+underscorec
+===========
+
+Copy the handlebars exe behaviour for underscore.js templates. 
+
+Example
+------
+
+Given a file system like this:
+
+views/
+  layout.us
+  home/
+    index.us
+    blah.us
+  admin/
+    dashboard.us
+
+The following command:
+
+  underscorec views/ output.js
+
+will compile the four underscore templates into the file output.js. The views are attached to a global templates object and named according to their path:
+
+* templates[layout]
+* templates[home/index]
+* templates[home/blah]
+* templates[admin/dashboard]
