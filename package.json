@@ -1,0 +1,25 @@
+{
+  "name": "underscorec",
+  "version": "0.0.1",
+  "description": "Command line precompilation for underscore.js templates",
+  "preferGlobal": "true",
+  "main": "index.js",
+  "bin": {
+    "underscorec": "index.js"
+  },
+  "author": "Liam McLennan",
+  "keywords": [
+    "underscore.js",
+    "templates"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:liammclennan/underscorec.git"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "underscore": "~1.4.3"
+  }
+}
