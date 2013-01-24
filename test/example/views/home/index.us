@@ -1,1 +1,2 @@
+<p>Some content</p>
 <% _.each(people, function(name) { %> <li><%= name %></li> <% }); %>

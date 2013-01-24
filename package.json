@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "description": "Command line precompilation for underscore.js templates",
   "preferGlobal": "true",
-  "main": "index.js",
+  "main": "underscorec.js",
   "bin": {
-    "underscorec": "index.js"
+    "underscorec": "bin/underscorec"
   },
   "author": "Liam McLennan",
   "keywords": [
@@ -20,6 +20,11 @@
     "node": "*"
   },
   "dependencies": {
-    "underscore": "~1.4.3"
+    "underscore": "~1.4.3",
+    "optimist": "~0.3.5"
+  },
+  "devDependencies": {
+    "mocha": "~1.8.1",
+    "shelljs": "~0.1.2"
   }
 }

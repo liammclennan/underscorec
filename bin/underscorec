@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+var optimist = require('optimist')
+    .usage('Precompile handlebar templates.\nUsage: $0 template...', {
+       'f': {
+        'type': 'string',
+        'description': 'Output File',
+        'alias': 'output'
+      },
+    });
+
+var target = optimist.argv._[0],
+  output = optimist.argv.f;
+
+var underscorec = require('../underscorec');
+
+underscorec.process(target, output);
