@@ -30,3 +30,8 @@ will compile the four underscore templates into the file output.js. The views ar
 * templates[home/index]
 * templates[home/blah]
 * templates[admin/dashboard]
+
+Testing
+-------
+
+mocha --compilers coffee:coffee-script test/fs_tests.coffee
