@@ -1,0 +1,120 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.1.61
+3 info using node@v0.8.9
+4 verbose publish [ '.' ]
+5 verbose read json /home/liam/work/listagram/underscorec/package.json
+6 verbose cache add [ '.', null ]
+7 silly cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { pathname: '.', path: '.', href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/liam/.npm/3a52ce78-.lock
+11 verbose read json package.json
+12 verbose tar pack [ '/home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/tmp.tgz',
+12 verbose tar pack   '.' ]
+13 verbose tarball /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/tmp.tgz
+14 verbose folder .
+15 info prepublish underscorec@0.0.1
+16 silly lockFile 012ce149-39186-0-8031399166211486-tmp-tgz /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/tmp.tgz
+17 verbose lock /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/tmp.tgz /home/liam/.npm/012ce149-39186-0-8031399166211486-tmp-tgz.lock
+18 silly lockFile 012ce149-39186-0-8031399166211486-tmp-tgz /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/tmp.tgz
+19 verbose tar unpack /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/tmp.tgz
+20 silly lockFile a778a32d-39186-0-8031399166211486-package /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/package
+21 verbose lock /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/package /home/liam/.npm/a778a32d-39186-0-8031399166211486-package.lock
+22 silly gunzTarPerm modes [ '755', '644' ]
+23 silly gunzTarPerm extractEntry package.json
+24 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+25 silly gunzTarPerm extractEntry .npmignore
+26 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+27 silly gunzTarPerm extractEntry README.md
+28 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+29 silly gunzTarPerm extractEntry underscorec.js
+30 silly gunzTarPerm modified mode [ 'underscorec.js', 436, 420 ]
+31 silly gunzTarPerm extractEntry test/fs_tests.coffee
+32 silly gunzTarPerm modified mode [ 'test/fs_tests.coffee', 436, 420 ]
+33 silly gunzTarPerm extractEntry test/example/views/admin/dashboard.us
+34 silly gunzTarPerm modified mode [ 'test/example/views/admin/dashboard.us', 436, 420 ]
+35 silly gunzTarPerm extractEntry test/example/views/home/blah.us
+36 silly gunzTarPerm modified mode [ 'test/example/views/home/blah.us', 436, 420 ]
+37 silly gunzTarPerm extractEntry test/example/views/home/index.us
+38 silly gunzTarPerm modified mode [ 'test/example/views/home/index.us', 436, 420 ]
+39 silly gunzTarPerm extractEntry test/example/views/layout.us
+40 silly gunzTarPerm modified mode [ 'test/example/views/layout.us', 436, 420 ]
+41 silly gunzTarPerm extractEntry bin/underscorec
+42 silly gunzTarPerm modified mode [ 'bin/underscorec', 509, 493 ]
+43 verbose read json /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/package/package.json
+44 silly lockFile a778a32d-39186-0-8031399166211486-package /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/package
+45 verbose from cache /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/package/package.json
+46 verbose tar pack [ '/home/liam/.npm/underscorec/0.0.1/package.tgz',
+46 verbose tar pack   '/home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/package' ]
+47 verbose tarball /home/liam/.npm/underscorec/0.0.1/package.tgz
+48 verbose folder /home/liam/tmp/npm-3173/1360317539186-0.8031399166211486/package
+49 silly lockFile 236aac05-pm-underscorec-0-0-1-package-tgz /home/liam/.npm/underscorec/0.0.1/package.tgz
+50 verbose lock /home/liam/.npm/underscorec/0.0.1/package.tgz /home/liam/.npm/236aac05-pm-underscorec-0-0-1-package-tgz.lock
+51 silly lockFile 236aac05-pm-underscorec-0-0-1-package-tgz /home/liam/.npm/underscorec/0.0.1/package.tgz
+52 silly lockFile af1b2917-am-npm-underscorec-0-0-1-package /home/liam/.npm/underscorec/0.0.1/package
+53 verbose lock /home/liam/.npm/underscorec/0.0.1/package /home/liam/.npm/af1b2917-am-npm-underscorec-0-0-1-package.lock
+54 silly lockFile af1b2917-am-npm-underscorec-0-0-1-package /home/liam/.npm/underscorec/0.0.1/package
+55 verbose tar unpack /home/liam/.npm/underscorec/0.0.1/package.tgz
+56 silly lockFile af1b2917-am-npm-underscorec-0-0-1-package /home/liam/.npm/underscorec/0.0.1/package
+57 verbose lock /home/liam/.npm/underscorec/0.0.1/package /home/liam/.npm/af1b2917-am-npm-underscorec-0-0-1-package.lock
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry .npmignore
+61 silly gunzTarPerm extractEntry README.md
+62 silly gunzTarPerm extractEntry underscorec.js
+63 silly gunzTarPerm extractEntry test/fs_tests.coffee
+64 silly gunzTarPerm extractEntry test/example/views/admin/dashboard.us
+65 silly gunzTarPerm extractEntry test/example/views/home/blah.us
+66 silly gunzTarPerm extractEntry test/example/views/home/index.us
+67 silly gunzTarPerm extractEntry test/example/views/layout.us
+68 silly gunzTarPerm extractEntry bin/underscorec
+69 verbose read json /home/liam/.npm/underscorec/0.0.1/package/package.json
+70 silly lockFile af1b2917-am-npm-underscorec-0-0-1-package /home/liam/.npm/underscorec/0.0.1/package
+71 silly shasum updated bytes 1889
+72 info shasum 88e8db5b29b117af551068ac632d435665cb13e5
+72 info shasum /home/liam/.npm/underscorec/0.0.1/package.tgz
+73 verbose from cache /home/liam/.npm/underscorec/0.0.1/package/package.json
+74 verbose chmod /home/liam/.npm/underscorec/0.0.1/package.tgz 644
+75 verbose chown /home/liam/.npm/underscorec/0.0.1/package.tgz [ 1000, 1000 ]
+76 silly lockFile 3a52ce78- .
+77 silly publish { name: 'underscorec',
+77 silly publish   version: '0.0.1',
+77 silly publish   description: 'Command line precompilation for underscore.js templates',
+77 silly publish   preferGlobal: 'true',
+77 silly publish   main: 'underscorec.js',
+77 silly publish   bin: { underscorec: 'bin/underscorec' },
+77 silly publish   author: { name: 'Liam McLennan' },
+77 silly publish   keywords: [ 'underscore.js', 'templates' ],
+77 silly publish   repository:
+77 silly publish    { type: 'git',
+77 silly publish      url: 'git@github.com:liammclennan/underscorec.git' },
+77 silly publish   engines: { node: '*' },
+77 silly publish   dependencies: { underscore: '~1.4.3', optimist: '~0.3.5', shelljs: '~0.1.2' },
+77 silly publish   devDependencies: { mocha: '~1.8.1', shelljs: '~0.1.2' },
+77 silly publish   readme: 'underscorec\n===========\n\nCommand line precompilation for underscore.js templates.\n\nExample\n------\n\nGiven a file system like this:\n\n<pre>\nviews/\n  layout.us\n  home/\n    index.us\n    blah.us\n  admin/\n    dashboard.us\n</pre>\n\nThe following command:\n\n```\nunderscorec views/ output.js\n```\n\nwill compile the four underscore templates into the file output.js. The views are attached to a global templates object and named according to their path:\n\n* templates[layout]\n* templates[home/index]\n* templates[home/blah]\n* templates[admin/dashboard]\n\nTesting\n-------\n\nmocha --compilers coffee:coffee-script test/fs_tests.coffee\n',
+77 silly publish   _id: 'underscorec@0.0.1',
+77 silly publish   dist: { shasum: '88e8db5b29b117af551068ac632d435665cb13e5' } }
+78 verbose url raw underscorec
+79 verbose url resolving [ 'https://registry.npmjs.org/', './underscorec' ]
+80 verbose url resolved https://registry.npmjs.org/underscorec
+81 info trying registry request attempt 1 at 19:58:59
+82 http PUT https://registry.npmjs.org/underscorec
+83 http 409 https://registry.npmjs.org/underscorec
+84 verbose url raw underscorec
+85 verbose url resolving [ 'https://registry.npmjs.org/', './underscorec' ]
+86 verbose url resolved https://registry.npmjs.org/underscorec
+87 info trying registry request attempt 1 at 19:59:01
+88 http GET https://registry.npmjs.org/underscorec
+89 http 200 https://registry.npmjs.org/underscorec
+90 error publish fail Cannot publish over existing version.
+90 error publish fail Bump the 'version' field, set the --force flag, or
+90 error publish fail     npm unpublish 'underscorec@0.0.1'
+90 error publish fail and try again
+91 error System Linux 3.2.0-37-generic
+92 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+93 error cwd /home/liam/work/listagram/underscorec
+94 error node -v v0.8.9
+95 error npm -v 1.1.61
+96 error code EPUBLISHCONFLICT
+97 verbose exit [ 1, true ]
