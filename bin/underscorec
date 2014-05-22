@@ -7,11 +7,36 @@ var optimist = require('optimist')
         'description': 'Output File',
         'alias': 'output'
       },
+      'interpolate': {
+        'type': 'string',
+        'description': 'Underscore `interpolate` template setting',
+      },
+      'escape': {
+        'type': 'string',
+        'description': 'Underscore `escape` template setting',
+      },
+      'evaluate': {
+        'type': 'string',
+        'description': 'Underscore `evaluate` template setting',
+      },
+      'variable': {
+        'type': 'string',
+        'description': 'Underscore `variable` template setting',
+      },
     });
 
 var target = optimist.argv._[0],
-  output = optimist.argv.f;
+  output = optimist.argv.f,
+  _ = require('underscore'),
+  templateSettings = _.pick(optimist.argv, 'interpolate', 'escape', 'evaluate', 'variable');
+
+if(!target) {
+    console.error('Error.  Please specify template directory');
+    optimist.showHelp();
+    return 1;
+}
 
 var underscorec = require('../underscorec');
 
+underscorec.configure(templateSettings);
 underscorec.process(target, output);
