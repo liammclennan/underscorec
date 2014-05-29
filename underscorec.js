@@ -1,12 +1,22 @@
 var shelljs = require('shelljs'),
   fs = require('fs'),
   path = require('path'),
-  _ = require('underscore');
+  _ = require('underscore'),
+  rw = require('rw'),
+  underscoreTemplateSettings = {};
+
 
 module.exports = {
 
+  configure: function(templateSettings) {
+    underscoreTemplateSettings = templateSettings;
+  },
+
   process: function (target, output) {
-    fs.writeFileSync(output, concat(readFiles(getTemplatePaths())), 'utf8', function (err) {
+
+    output = output || '/dev/stdout'
+
+    rw.writeSync(output, concat(readFiles(getTemplatePaths())), 'utf8', function (err) {
       if (err) {
         console.log(err);
       }
@@ -23,10 +33,10 @@ module.exports = {
 
     function readFiles(paths) {
       return paths.map(function (file) {
-        var source = _.template(fs.readFileSync(path.join(target,file), 'utf8')).source;
+        var source = _.template(fs.readFileSync(path.join(target,file), 'utf8'), null, underscoreTemplateSettings).source;
         var declaration = 'templates["' + file.split('.')[0] + '"] = ' + source;
         return {
-          'path': file, 
+          'path': file,
           declaration: declaration
         };
       });
