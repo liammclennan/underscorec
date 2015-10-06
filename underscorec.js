@@ -24,7 +24,7 @@ module.exports = {
 
     function getTemplatePaths() {
       paths = shelljs.find(target).filter(function (file) {
-        return file.match(/\.us$/);
+        return file.match(/(\.us|\.html)$/);
       }).map(function (file) {
         return file.substr(target.length);
       });
